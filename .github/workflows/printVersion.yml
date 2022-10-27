@@ -1,8 +1,8 @@
-name: hello-world
+name: printVersion
 on: push
 jobs:
   my-job:
     runs-on: macos-latest
     steps:
       - name: my-step
-        run: echo "MacOS Version %sw_vers -productVersion"
+        run: echo "MacOS Version" %sw_vers -productVersion
