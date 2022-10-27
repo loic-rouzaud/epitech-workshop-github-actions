@@ -11,4 +11,4 @@ jobs:
       - name: Time
         run: echo $TAG_NAME - $RELEASE_NAME
         env:
-          TAG_NAME: Hello World! Today is $(date +'%d-%m-%Y %H-%M-%S')
+          TAG_NAME: Hello World! Today is ${{ steps.date.outputs.date }}
