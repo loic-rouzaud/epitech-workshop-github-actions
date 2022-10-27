@@ -1,5 +1,5 @@
 name: printVersion
-on: [workflow_dispatch]
+on: [push]
 jobs:
   printVersion:
     runs-on: macos-latest
